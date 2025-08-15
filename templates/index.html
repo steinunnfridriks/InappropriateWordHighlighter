@@ -1,0 +1,108 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Inappropriate Word Highlighter</title>
+  <link rel="stylesheet" href="/static/styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Inappropriate Word Highlighter</h1>
+    <label for="text-input" class="visually-hidden">Text to check</label>
+    <textarea id="text-input" placeholder="Paste or write your text here..."></textarea>
+    <button id="submit-btn" type="button">Check Text</button>
+    <div id="loading" class="hidden" aria-live="polite">
+      <span class="spinner" aria-hidden="true"></span>
+      <span class="visually-hidden">Processing...</span>
+    </div>
+    <div id="result" aria-live="polite"></div>
+
+    <div id="legend">
+      <h2 class="legend-title">Categories</h2>
+      <div class="legend-items">
+        <span class="legend-item" title="Derogatory terms related to substance abuse or addictive behaviors.">
+          <span class="legend-dot addiction"></span>
+          Addiction
+        </span>
+        <span class="legend-item" title="Derogatory terms related to physical, mental, or developmental disabilities.">
+          <span class="legend-dot disability"></span>
+          Disability
+        </span>        
+        <span class="legend-item" title="Derogatory terms related to nationality, ethnicity, or geographic origin.">
+          <span class="legend-dot origin"></span>
+          Origin
+        </span>        
+        <span class="legend-item" title="Commonly inappropriate or sensitive terms not covered by other categories.">
+          <span class="legend-dot general"></span>
+          General
+        </span>
+        <span class="legend-item" title="Derogatory terms related to sexual orientation, gender identity, or related topics.">
+          <span class="legend-dot lgbtqia"></span>
+          LGBTQIA+
+        </span>
+        <span class="legend-item" title="Derogatory terms related to physical appearance or body image.">
+          <span class="legend-dot looks"></span>
+          Looks
+        </span>
+        <span class="legend-item" title="Insults or derogatory remarks about personal traits or characteristics.">
+          <span class="legend-dot personal"></span>
+          Personal traits
+        </span>
+        <span class="legend-item" title="Swear words or vulgar language.">
+          <span class="legend-dot profanity"></span>
+          Profanity
+        </span>
+        <span class="legend-item" title="Derogatory terms related to religious beliefs or practices.">
+          <span class="legend-dot religion"></span>
+          Religion
+        </span>
+        <span class="legend-item" title="Sexually explicit or suggestive language.">
+          <span class="legend-dot sexual"></span>
+          Sexual
+        </span>
+        <span class="legend-item" title="Derogatory or otherwise negative terms about social status, class, or group membership.">
+          <span class="legend-dot social"></span>
+          Social status
+        </span>
+        <span class="legend-item" title="Insults or terms implying lack of intelligence.">
+          <span class="legend-dot stupidity"></span>
+          Stupidity
+        </span>
+        <span class="legend-item" title="Crude, offensive, or obscene language.">
+          <span class="legend-dot vulgar"></span>
+          Vulgar
+        </span>
+        <span class="legend-item" title="Sexist or derogatory language targeting women.">
+          <span class="legend-dot women"></span>
+          Misogyny
+        </span>
+      </div>
+    </div>
+
+    <div id="disclaimer">
+      <h2 class="disclaimer-title">Disclaimer</h2>
+      <p>
+        This tool highlights words and phrases that may be considered inappropriate or sensitive. They may include racism, sexism, ableism, or other forms of derogatory language and/or be negative or inflammatory in nature.
+        <br><br>
+        <b>The results are generated automatically by an AI model and may not always be accurate or contextually appropriate. Some words may be highlighted that are not offensive in the context, and some offensive words may not be highlighted. Please use your own judgment when interpreting the highlighted content.</b> 
+       <br><br>
+        No personal data is stored or shared.
+      </p>
+
+      </div>
+      <div id="feedback">
+        <h2 class="feedback-title">Report an Issue or Suggestion</h2>
+          <p>
+          Found a mistake or have an idea to improve this tool?<br>
+          <a href="mailto:srf2@hi.is?subject=Inappropriate%20Word%20Highlighter%20Feedback" class="feedback-link">
+          📧 Send feedback via email
+          </a>
+          </p>
+      </div>
+    </div>
+
+  <script src="/static/script.js"></script>
+</body>
+</html>
