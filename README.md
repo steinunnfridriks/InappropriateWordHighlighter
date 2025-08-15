@@ -41,7 +41,7 @@ It runs **locally** in your browser, user-submitted text is **never sent or stor
 
 ## License & Responsible Use
 
-This tool is released under the **[BigScience OpenRAIL-M License](https://www.licenses.ai/ai-licenses)**, which allows free use **with restrictions** against harmful or discriminatory applications.
+This tool is released under the **[BigScience OpenRAIL-D License]([https://www.licenses.ai/ai-licenses](https://www.licenses.ai/blog/2022/8/18/naming-convention-of-responsible-ai-licenses))**, which allows free use **with restrictions** against harmful or discriminatory applications.
 
 It must **not** be used for:
 - Harassment or discrimination
